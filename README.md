@@ -39,6 +39,7 @@ export PATH=$PATH:$GOBIN
 
 
 * 验证，查看是否配置成功
+
 >>go version  
 
 
