@@ -10,6 +10,38 @@ Go Study
 
 * http://golang.so/dl/go1.3.linux-386.tar.gz
 
+
+### CentOS6.5上golang环境配置
+
+
+* 下载和解压go环境包
+
+>>cd /usr/local/src/
+
+>>wget -c http://golangtc.com/static/go/go1.4beta1.linux-amd64.tar.gz
+
+>>tar zxvf go1.4beta1.linux-amd64.tar.gz -C /usr/local
+
+
+* 设置系统环境变量
+
+>>vi /etc/profile
+
+export GOROOT=/usr/local/go
+
+export GOBIN=$GOROOT/bin
+
+export PATH=$PATH:$GOBIN
+
+* 编译，使其生效
+
+>>source /etc/profile  
+
+
+* 验证，查看是否配置成功
+>>go version  
+
+
 -----
  
 ## IDE
