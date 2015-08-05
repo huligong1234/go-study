@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Hello Golang</title>
+    </head>
+    <body>
+    Hello, Apps
+    <table border=1>
+        <tr>
+            <th>ID</th>
+			<th>AppCode</th>
+			<th>AppName</th>
+        </tr>
+        {{ range .apps }}
+            <tr>
+                <td>{{ .ID }}</td>
+				<td>{{ .AppCode }}</td>
+				<td>{{ .AppName }}</td>
+            </tr>
+        {{ end }}
+    </table>
+    </body>
+</html>
